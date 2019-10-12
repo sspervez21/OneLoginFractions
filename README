@@ -1,0 +1,24 @@
+This repository contains a caluclator that operates on fractions. We only support the operators +,-,*,/.
+
+Build instructions:
+ - Install Go
+ - go build Calc.go Fraction.go Main.go SignedCalc.go
+ - This should create an executable that can be run on the commandline
+ 
+Sample execution:
+$ ./Calc.exe
+? 1/3 + 2/3
+= 1_0
+? 1_1/3 + 2_1/3
+= 3_2/3
+? -1_1/3 + -2_1/3
+= -3_2/3
+? exit
+
+Note that negative numbers are supported when in the correct syntax. Operatnds and operator must be separated by one or more spaces.
+
+TODO:
+
+  - Add support for whole numbers. Today, fractional components are required. We could make a simple modification to allow whole numbers only.
+  - Add more tests. The existing code is about 75% test complete, additional tests are required for corner conditions such as divide-by-zero and zero fractione e.g. (0/0)
+  
