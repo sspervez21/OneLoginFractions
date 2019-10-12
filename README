@@ -2,9 +2,9 @@ This repository contains a caluclator that operates on fractions. We only suppor
 
 Build instructions:
  - Install Go
- - go build Calc.go Fraction.go Main.go SignedCalc.go
+ - go build Main.go Calc.go Fraction.go SignedCalc.go
  - This should create an executable that can be run on the commandline
- 
+
 Sample execution:
 $ ./Calc.exe
 ? 1/3 + 2/3
